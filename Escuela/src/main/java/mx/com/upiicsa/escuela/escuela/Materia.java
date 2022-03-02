@@ -8,6 +8,7 @@ public class Materia {
     private String salon;
     ArrayList<Profesor> profesores;
     ArrayList<Alumno> alumnos;
+    ArrayList<HoraClase> horario;
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -33,6 +34,9 @@ public class Materia {
     public String getCreditos() {
         return this.creditos;
     }
+    public ArrayList<HoraClase> getHorario(){
+        return this.horario;
+    }
     public void setProfesores(ArrayList<Profesor> profesores) {
         this.profesores = profesores;
     }
@@ -44,10 +48,8 @@ public class Materia {
         this.alumnos.add(alumno);
         return "Alumno asignado";
     }
-    public String asignarGrupo(){
-        return "";
-       //TO DO
-    }
-
-    
+    public String asignarHora(HoraClase hora) {
+        this.horario.add(hora);
+        return "Hora asignada";
+    }    
 }
