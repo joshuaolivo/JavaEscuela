@@ -2,21 +2,21 @@ package mx.com.upiicsa.escuela.escuela;
 
 public class SituacionAcademica {
     private String semestre;
-    private float promediogeneral;
+    private float promedioGeneral;
     private String status;
     private String carrera;
     private float creditos;
     public String getSemester(){
         return this.semestre;
     }
-    public void setSemester(String semester){
-        this.semestre = semester;
+    public void setSemestre(String semestre){
+        this.semestre = semestre;
     }
-    public float getPromediogeneral(){
-        return this.promediogeneral;
+    public float getPromedioGeneral(){
+        return this.promedioGeneral;
     }
-    public void setPromediogeneral(float promediogeneral){
-        this.promediogeneral = promediogeneral;
+    public void setPromediogeneral(float promedioGeneral){
+        this.promedioGeneral = promedioGeneral;
     }
     public String getStatus(){
         return this.status;
