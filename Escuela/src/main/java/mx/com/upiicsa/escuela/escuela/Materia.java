@@ -34,11 +34,23 @@ public class Materia {
     public String getCreditos() {
         return this.creditos;
     }
+    public void setHorario(ArrayList<HoraClase> horario){
+        this.horario = horario;
+    }
     public ArrayList<HoraClase> getHorario(){
         return this.horario;
     }
     public void setProfesores(ArrayList<Profesor> profesores) {
         this.profesores = profesores;
+    }
+    public ArrayList<Profesor> getProfesores(){
+        return this.profesores
+    }
+    public void setAlumnos(ArrayList<Alumno> alumnos) {
+        this.alumnos = alumnos;
+    }
+    public ArrayList<Alumno> getAlumnos(){
+        return this.alumnos
     }
     public String asignarProfesor(Profesor profesor) {
         this.profesores.add(profesor);
