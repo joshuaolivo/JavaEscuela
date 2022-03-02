@@ -6,7 +6,7 @@ public class SituacionAcademica {
     private String status;
     private String carrera;
     private float creditos;
-    public String getSemester(){
+    public String getSemestre(){
         return this.semestre;
     }
     public void setSemestre(String semestre){
